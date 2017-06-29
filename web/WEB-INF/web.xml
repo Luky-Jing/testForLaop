@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--注册servlet-->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindServlet</servlet-name>
+        <servlet-class>servlet.FindServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindServlet</servlet-name>
+        <url-pattern>/FindServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindServletForUpdate</servlet-name>
+        <servlet-class>servlet.FindServletForUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindServletForUpdate</servlet-name>
+        <url-pattern>/FindServletForUpdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>servlet.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProgressServlet</servlet-name>
+        <servlet-class>servlet.ProgressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProgressServlet</servlet-name>
+        <url-pattern>/ProgressServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindServletForSearch</servlet-name>
+        <servlet-class>servlet.FindServletForSearch</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindServletForSearch</servlet-name>
+        <url-pattern>/FindServletForSearch</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindServletForProgress</servlet-name>
+        <servlet-class>servlet.FindServletForProgress</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindServletForProgress</servlet-name>
+        <url-pattern>/FindServletForProgress</url-pattern>
+    </servlet-mapping>
+</web-app>
